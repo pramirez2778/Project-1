@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-- Project-1/Diagram/
+- Project-1/Diagram/Jumpboxscreenshot.JPG
 - azureuser@Jump-Box:~$ sudo docker container start pedantic_wescoff
 - azureuser@Jump-Box:~$ sudo docker container attach pedantic_wescoff
 
