@@ -45,16 +45,16 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+- 20.118.32.224
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by Jump Box virtual machine.
+- The Jump Box VM has access to the ELK VM. The IP address of the Jump Box VM is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No              |   47.145.103.191  |
+| Jump Box | No              |   20.118.32.224  |
 | Web-1         |    No                 |        10.0.0.5              |
 |  Web-2        |  No                   |  10.0.0.6                    |
 |  Elk-Vm2        |  No                   |  10.3.0.5                    |
@@ -73,7 +73,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+- azureuser@Jump-Box:~$ sudo docker container start pedantic_wescoff
+- azureuser@Jump-Box:~$ sudo docker container attach pedantic_wescoff
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
