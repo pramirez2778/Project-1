@@ -9,14 +9,14 @@ These files have been tested and used to generate a live ELK deployment on Azure
 prami@DESKTOP-UTFAN2Q MINGW64 ~/Project-1 (main) nano Filebeat-playbook.yml
 
 This document contains the following details:
-Description of the Topologu Access Policies ELK Configuration Beats in Use Machines Being Monitored How to Use the Ansible Build Description of the Topology The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+- Description of the Topologu Access Policies ELK Configuration Beats in Use Machines Being Monitored How to Use the Ansible Build - Description of the Topology The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the  Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly reliable and available, in addition to restricting traffic to the network.
 
-Load balancers can defend an organization against denial-of-service (DDos) attacks. The advantage of having a jumpbox is being able to use a virtual machine that has hardended security and can manage other systems within your security sone or overal network. Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
+- Load balancers can defend an organization against denial-of-service (DDos) attacks. The advantage of having a jumpbox is being able to use a virtual machine that has hardended security and can manage other systems within your security sone or overal network. Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-Filebeat monitors the log files or locations that you specify. Metricbeat records the metrics and statistics from the operation system and from services running on the server. The configuration details of each machine may be found below.
-
+- Filebeat monitors the log files or locations that you specify.
+- Metricbeat records the metrics and statistics from the operation system and from services running on the server. The configuration details of each machine may be found below.
 
 ### Description of the Topology
 
@@ -92,7 +92,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the Ansible.cfg file to /etc/ansible.
-- Update the _____ file to include...
+- Update the install-elk.yml and filebeat-playbook.yml file to include the machine you want to use for the playbooks on by change the hosts name on the 3rd line.
 - [webservers] 10.0.0.4 ansible_python_interpreter=/usr/bin/python3 10.0.0.5 ansible_python_interpreter=/usr/bin/python3 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 
 [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
