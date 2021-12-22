@@ -28,9 +28,11 @@ Filebeat monitors the log files or locations that you specify.
 Metricbeat records the metrics and statistics from the operation system and from services running on the server.
 The configuration details of each machine may be found below.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.0.0.4	Linux
-Web-1	Webserver 1	10.0.0.5	Linux
+Colons can be used to align columns.
+
+| Name | Function | IP Address | Operating System
+| Jump Box | Gateway | 10.0.0.4 | Linux
+Web-1	Webserver 1 | 10.0.0.5 | Linux
 Web-2	Webserver 2	10.0.0.6	Linux
 ELK-VM2 Webserver 3 10.3.0.5  Linux
 
@@ -46,11 +48,11 @@ The Jump Box VM has access to the ELK VM. The IP address of the Jump Box VM is 1
 A summary of the access policies in place can be found in the table below.
 
 Name	Publicly Accessible	Allowed IP Addresses
-Jump Box	No	20.118.32.224
-Web-1	No	10.0.0.4
-Web-2	No	10.0.0.4
-Web-3	No	10.0.0.4
+Jump Box	No	 10.0.0.4 20.118.32.224
+Web-1	No	10.0.0.5
+Web-2	No	10.0.0.6
 ELK-VM2	No	10.3.0.5
+
 Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
