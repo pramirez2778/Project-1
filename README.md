@@ -99,3 +99,13 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk.yml and filebeat-playbook.yml file to /etc/ansible.
 - Update the install-elk.yml and filebeat-playbook.yml file to include the machine you want use the playbooks on by changing the hosts name on the 3rd line.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected
+
+Commands to Use the Playbook
+nano ansible.cfg
+add the machine, its IP, and ansible_python_interpreter=/usr/bin/python3 to the hosts
+Ctrl + x to exit file
+in the folder that install-elk.yml is in, run: cp install-elk.yml /etc/ansible
+nano install-elk.yml /etc/ansible
+name: installing elk hosts: [your_machine]
+Ctrl + x to exit file
+ansible-playbook install-elk.yml
