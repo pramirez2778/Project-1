@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-prami@DESKTOP-UTFAN2Q MINGW64 Project-1/etc/Ansible/
+prami@DESKTOP-UTFAN2Q MINGW64 Project-1/Ansible/azurescreenshot.JPG
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -26,7 +26,7 @@ Load balancing ensures that the application will be highly reliable, in addition
 - Load balancers can defend an organization against denial-of-service (DDos) attacks. The advantage of having a jumpbox is being able to use a virtual machine that has hardended security and can manage other systems within your security sone or overal network.
 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - Filebeat monitors the log files or locations that you specify.
 - Metricbeat records the metrics and statistics from the operation system and from services running on the server.
 
@@ -43,7 +43,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 20.118.32.224
 
 Machines within the network can only be accessed by Jump Box virtual machine.
