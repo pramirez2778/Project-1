@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-prami@DESKTOP-UTFAN2Q MINGW64 Project-1/Ansible/azurescreenshot.JPG
+prami@DESKTOP-U****** M****** Project-1/Diagram/azurescreenshot.JPG
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-prami@DESKTOP-UTFAN2Q MINGW64 ~/Project-1 (main) nano Filebeat-playbook.yml
+prami@DESKTOP-U****** M***** ~/Project-1 (main) nano Filebeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topologu Access Policies ELK Configuration Beats in Use Machines Being Monitored How to Use the Ansible Build - Description of the Topology The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the  Vulnerable Web Application.
@@ -72,6 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+- Project-1/Diagram/
 - azureuser@Jump-Box:~$ sudo docker container start pedantic_wescoff
 - azureuser@Jump-Box:~$ sudo docker container attach pedantic_wescoff
 
